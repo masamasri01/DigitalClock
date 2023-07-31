@@ -1,0 +1,779 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4620 ]
+[d frameptr 4065 ]
+"492 /opt/microchip/xc8/v1.45/sources/common/doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"62 /opt/microchip/xc8/v1.45/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 /opt/microchip/xc8/v1.45/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 /opt/microchip/xc8/v1.45/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 /opt/microchip/xc8/v1.45/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 /opt/microchip/xc8/v1.45/sources/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.45/sources/common/isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"8 /opt/microchip/xc8/v1.45/sources/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 /opt/microchip/xc8/v1.45/sources/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 /opt/microchip/xc8/v1.45/sources/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 /opt/microchip/xc8/v1.45/sources/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.45/sources/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 /opt/microchip/xc8/v1.45/sources/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 /opt/microchip/xc8/v1.45/sources/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"119 /home/masah/MPLABXProjects/DigitalClock.X/DigitalClock.c
+[v _disableInterrupts disableInterrupts `(v  1 e 1 0 ]
+[v i2_disableInterrupts disableInterrupts `(v  1 e 1 0 ]
+"124
+[v _enableInterrupts enableInterrupts `(v  1 e 1 0 ]
+[v i2_enableInterrupts enableInterrupts `(v  1 e 1 0 ]
+"129
+[v _main main `(v  1 e 1 0 ]
+"302
+[v _setupPorts setupPorts `(v  1 e 1 0 ]
+"315
+[v _updateAlarmDisplay updateAlarmDisplay `(v  1 e 1 0 ]
+"324
+[v _reloadTimer0 reloadTimer0 `(v  1 e 1 0 ]
+"331
+[v _initTimers01 initTimers01 `(v  1 e 1 0 ]
+"350
+[v _initialization initialization `(v  1 e 1 0 ]
+"374
+[v _updateClockDisplay updateClockDisplay `(v  1 e 1 0 ]
+"380
+[v _updateAlarmStateDisplay updateAlarmStateDisplay `(v  1 e 1 0 ]
+"386
+[v _DisplayNames DisplayNames `(v  1 e 1 0 ]
+"398
+[v _isDigit isDigit `(i  1 e 2 0 ]
+"405
+[v _highIsr highIsr `IIH(v  1 e 1 0 ]
+"436
+[v _lowIsr lowIsr `IIL(v  1 e 1 0 ]
+"19 /home/masah/MPLABXProjects/DigitalClock.X/Lcd.c
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+"27
+[v _delay_cycles delay_cycles `(v  1 e 1 0 ]
+"36
+[v _lcd_send_nibble lcd_send_nibble `(v  1 e 1 0 ]
+"46
+[v _lcd_send_byte lcd_send_byte `(v  1 e 1 0 ]
+"63
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"96
+[v _lcd_gotoxy lcd_gotoxy `(v  1 e 1 0 ]
+"113
+[v _lcd_putc lcd_putc `(v  1 e 1 0 ]
+"127
+[v _lcd_puts lcd_puts `(v  1 e 1 0 ]
+"9 /home/masah/MPLABXProjects/DigitalClock.X/Serial.c
+[v _setupSerial setupSerial `(v  1 e 1 0 ]
+"66
+[v _read_byte_no_lib read_byte_no_lib `(uc  1 e 1 0 ]
+"72
+[v _send_byte_no_lib send_byte_no_lib `(v  1 e 1 0 ]
+"80
+[v _send_string_no_lib send_string_no_lib `(v  1 e 1 0 ]
+[s S377 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"403 /opt/microchip/xc8/v1.45/include/pic18f4620.h
+[s S386 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 SCK 1 0 :1:3 
+`uc 1 SDI 1 0 :1:4 
+`uc 1 SDO 1 0 :1:5 
+`uc 1 TX 1 0 :1:6 
+`uc 1 RX 1 0 :1:7 
+]
+[s S395 . 1 `uc 1 T13CKI 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SCL 1 0 :1:3 
+`uc 1 SDA 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CK 1 0 :1:6 
+`uc 1 DT 1 0 :1:7 
+]
+[s S404 . 1 `uc 1 T1CKI 1 0 :1:0 
+]
+[s S406 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+[u S410 . 1 `S377 1 . 1 0 `S386 1 . 1 0 `S395 1 . 1 0 `S404 1 . 1 0 `S406 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES410  1 e 1 @3970 ]
+[s S946 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+]
+"733
+[s S951 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 CS 1 0 :1:2 
+`uc 1 MCLR 1 0 :1:3 
+]
+[s S956 . 1 `uc 1 NOT_RD 1 0 :1:0 
+]
+[s S958 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_WR 1 0 :1:1 
+]
+[s S961 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_CS 1 0 :1:2 
+]
+[s S964 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_MCLR 1 0 :1:3 
+]
+[s S967 . 1 `uc 1 nRD 1 0 :1:0 
+`uc 1 nWR 1 0 :1:1 
+`uc 1 nCS 1 0 :1:2 
+`uc 1 nMCLR 1 0 :1:3 
+]
+[s S972 . 1 `uc 1 AN5 1 0 :1:0 
+`uc 1 AN6 1 0 :1:1 
+`uc 1 AN7 1 0 :1:2 
+`uc 1 VPP 1 0 :1:3 
+]
+[s S977 . 1 `uc 1 PD2 1 0 :1:0 
+`uc 1 PC2 1 0 :1:1 
+`uc 1 CCP10 1 0 :1:2 
+`uc 1 CCP9E 1 0 :1:3 
+]
+[s S982 . 1 `uc 1 RDE 1 0 :1:0 
+`uc 1 WRE 1 0 :1:1 
+`uc 1 PB2 1 0 :1:2 
+`uc 1 PC3E 1 0 :1:3 
+]
+[u S987 . 1 `S946 1 . 1 0 `S951 1 . 1 0 `S956 1 . 1 0 `S958 1 . 1 0 `S961 1 . 1 0 `S964 1 . 1 0 `S967 1 . 1 0 `S972 1 . 1 0 `S977 1 . 1 0 `S982 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES987  1 e 1 @3972 ]
+"1378
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1600
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"1822
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S813 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1854
+[u S831 . 1 `S813 1 . 1 0 `S377 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES831  1 e 1 @3988 ]
+"2044
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"2266
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+[s S853 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"2594
+[s S862 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+]
+[u S866 . 1 `S853 1 . 1 0 `S862 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES866  1 e 1 @3998 ]
+"3018
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+[s S758 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3059
+[s S767 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S770 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[s S773 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S776 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S779 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[u S781 . 1 `S758 1 . 1 0 `S767 1 . 1 0 `S770 1 . 1 0 `S773 1 . 1 0 `S776 1 . 1 0 `S779 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES781  1 e 1 @4011 ]
+"3228
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+[s S705 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3267
+[s S714 . 1 `uc 1 TX9D1 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+`uc 1 BRGH1 1 0 :1:2 
+`uc 1 SENDB1 1 0 :1:3 
+`uc 1 SYNC1 1 0 :1:4 
+`uc 1 TXEN1 1 0 :1:5 
+`uc 1 TX91 1 0 :1:6 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S723 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S726 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[u S728 . 1 `S705 1 . 1 0 `S714 1 . 1 0 `S723 1 . 1 0 `S726 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES728  1 e 1 @4012 ]
+"3484
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"3496
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"3508
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"3520
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
+[s S450 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T3SYNC 1 0 :1:2 
+]
+"3564
+[s S453 . 1 `uc 1 TMR3ON 1 0 :1:0 
+`uc 1 TMR3CS 1 0 :1:1 
+`uc 1 nT3SYNC 1 0 :1:2 
+`uc 1 T3CCP1 1 0 :1:3 
+`uc 1 T3CKPS 1 0 :2:4 
+`uc 1 T3CCP2 1 0 :1:6 
+`uc 1 RD16 1 0 :1:7 
+]
+[s S461 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T3SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T3CKPS0 1 0 :1:4 
+`uc 1 T3CKPS1 1 0 :1:5 
+]
+[s S467 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN3 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 RD163 1 0 :1:7 
+]
+[s S472 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 T3RD16 1 0 :1:7 
+]
+[u S475 . 1 `S450 1 . 1 0 `S453 1 . 1 0 `S461 1 . 1 0 `S467 1 . 1 0 `S472 1 . 1 0 ]
+[v _T3CONbits T3CONbits `VES475  1 e 1 @4017 ]
+[s S663 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 TXCKP 1 0 :1:4 
+`uc 1 RXDTP 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"4013
+[s S672 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 RXCKP 1 0 :1:5 
+`uc 1 RCMT 1 0 :1:6 
+]
+[s S677 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 W4E 1 0 :1:1 
+]
+[u S680 . 1 `S663 1 . 1 0 `S672 1 . 1 0 `S677 1 . 1 0 ]
+[v _BAUDCONbits BAUDCONbits `VES680  1 e 1 @4024 ]
+"4442
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"4527
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S183 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+"5255
+[s S186 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 T1RUN 1 0 :1:6 
+`uc 1 RD16 1 0 :1:7 
+]
+[s S194 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S200 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 T1RD16 1 0 :1:7 
+]
+[u S205 . 1 `S183 1 . 1 0 `S186 1 . 1 0 `S194 1 . 1 0 `S200 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES205  1 e 1 @4045 ]
+[s S310 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"5389
+[s S312 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S315 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S318 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S321 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S324 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S333 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+]
+[u S339 . 1 `S310 1 . 1 0 `S312 1 . 1 0 `S315 1 . 1 0 `S318 1 . 1 0 `S321 1 . 1 0 `S324 1 . 1 0 `S333 1 . 1 0 ]
+[v _RCONbits RCONbits `VES339  1 e 1 @4048 ]
+"5854
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+[s S153 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"5876
+[s S160 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 T016BIT 1 0 :1:6 
+]
+[u S166 . 1 `S153 1 . 1 0 `S160 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES166  1 e 1 @4053 ]
+"5938
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"5945
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+"6210
+[v _INTCON3 INTCON3 `VEuc  1 e 1 @4080 ]
+[s S270 . 1 `uc 1 INT1IF 1 0 :1:0 
+`uc 1 INT2IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 INT1IE 1 0 :1:3 
+`uc 1 INT2IE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 INT1IP 1 0 :1:6 
+`uc 1 INT2IP 1 0 :1:7 
+]
+"6237
+[s S279 . 1 `uc 1 INT1F 1 0 :1:0 
+`uc 1 INT2F 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 INT1E 1 0 :1:3 
+`uc 1 INT2E 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 INT1P 1 0 :1:6 
+`uc 1 INT2P 1 0 :1:7 
+]
+[u S288 . 1 `S270 1 . 1 0 `S279 1 . 1 0 ]
+[v _INTCON3bits INTCON3bits `VES288  1 e 1 @4080 ]
+"6302
+[v _INTCON2 INTCON2 `VEuc  1 e 1 @4081 ]
+[s S235 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"6327
+[s S238 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S247 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S250 . 1 `S235 1 . 1 0 `S238 1 . 1 0 `S247 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES250  1 e 1 @4081 ]
+[s S27 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"6404
+[s S36 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S45 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S49 . 1 `S27 1 . 1 0 `S36 1 . 1 0 `S45 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES49  1 e 1 @4082 ]
+"354 /opt/microchip/xc8/v1.45/sources/common/doprnt.c
+[v _dpowers dpowers `C[5]ui  1 s 10 dpowers ]
+"77 /home/masah/MPLABXProjects/DigitalClock.X/DigitalClock.c
+[v _hours hours `uc  1 e 1 0 ]
+"78
+[v _minutes minutes `uc  1 e 1 0 ]
+"79
+[v _seconds seconds `uc  1 e 1 0 ]
+"80
+[v _alarm_hours alarm_hours `uc  1 e 1 0 ]
+"81
+[v _alarm_minutes alarm_minutes `uc  1 e 1 0 ]
+"82
+[v _alarm_seconds alarm_seconds `uc  1 e 1 0 ]
+"84
+[v _alarm_enabled alarm_enabled `VEuc  1 e 1 0 ]
+"107
+[v _start_recieved start_recieved `uc  1 e 1 0 ]
+"108
+[v _read_time_flag read_time_flag `uc  1 e 1 0 ]
+"109
+[v _read_flag read_flag `uc  1 e 1 0 ]
+"110
+[v _read_alarm_flag read_alarm_flag `uc  1 e 1 0 ]
+"111
+[v _capital_w_flag capital_w_flag `uc  1 e 1 0 ]
+"112
+[v _small_w_flag small_w_flag `uc  1 e 1 0 ]
+"113
+[v _first_digit first_digit `uc  1 e 1 0 ]
+"114
+[v _h_flag h_flag `uc  1 e 1 0 ]
+"115
+[v _m_flag m_flag `uc  1 e 1 0 ]
+"116
+[v _s_flag s_flag `uc  1 e 1 0 ]
+"117
+[v _a_flag a_flag `uc  1 e 1 0 ]
+"118
+[v _toggle_alarm_flag toggle_alarm_flag `VEuc  1 e 1 0 ]
+"13 /home/masah/MPLABXProjects/DigitalClock.X/Lcd.c
+[v _LCD_INIT_STRING LCD_INIT_STRING `[4]uc  1 e 4 0 ]
+[s S21 lcd_pin_map 1 `uc 1 un1 1 0 :1:0 
+`uc 1 rs 1 0 :1:1 
+`uc 1 rw 1 0 :1:2 
+`uc 1 enable 1 0 :1:3 
+`uc 1 data 1 0 :4:4 
+]
+"23 /home/masah/MPLABXProjects/DigitalClock.X/Lcd.h
+[v _lcd lcd `S21  1 e 1 @3971 ]
+"129 /home/masah/MPLABXProjects/DigitalClock.X/DigitalClock.c
+[v _main main `(v  1 e 1 0 ]
+{
+"176
+[v main@alarm_response alarm_response `[13]uc  1 a 13 32 ]
+"170
+[v main@time_response time_response `[9]uc  1 a 9 45 ]
+"144
+[v main@c c `uc  1 a 1 56 ]
+"300
+} 0
+"374
+[v _updateClockDisplay updateClockDisplay `(v  1 e 1 0 ]
+{
+"375
+[v updateClockDisplay@Buffer Buffer `[32]uc  1 a 32 0 ]
+"379
+} 0
+"380
+[v _updateAlarmStateDisplay updateAlarmStateDisplay `(v  1 e 1 0 ]
+{
+"385
+} 0
+"315
+[v _updateAlarmDisplay updateAlarmDisplay `(v  1 e 1 0 ]
+{
+"316
+[v updateAlarmDisplay@alarm_string alarm_string `[17]uc  1 a 17 0 ]
+"322
+} 0
+"492 /opt/microchip/xc8/v1.45/sources/common/doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+"501
+[v sprintf@width width `i  1 a 2 77 ]
+"529
+[v sprintf@len len `ui  1 a 2 75 ]
+"530
+[v sprintf@cp cp `*.32Cuc  1 a 2 73 ]
+"494
+[v sprintf@ap ap `[1]*.39v  1 a 2 71 ]
+"528
+[v sprintf@val val `ui  1 a 2 68 ]
+"499
+[v sprintf@c c `c  1 a 1 79 ]
+"506
+[v sprintf@prec prec `c  1 a 1 70 ]
+"508
+[v sprintf@flag flag `uc  1 a 1 67 ]
+"492
+[v sprintf@sp sp `*.39uc  1 p 2 51 ]
+[v sprintf@f f `*.32Cuc  1 p 2 53 ]
+"1541
+} 0
+"8 /opt/microchip/xc8/v1.45/sources/common/isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 41 ]
+"15
+} 0
+"15 /opt/microchip/xc8/v1.45/sources/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 43 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 39 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 41 ]
+"53
+} 0
+"8 /opt/microchip/xc8/v1.45/sources/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 50 ]
+"8
+[v ___lwmod@dividend dividend `ui  1 p 2 46 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 48 ]
+"26
+} 0
+"8 /opt/microchip/xc8/v1.45/sources/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 43 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 45 ]
+"8
+[v ___lwdiv@dividend dividend `ui  1 p 2 39 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 41 ]
+"31
+} 0
+"9 /home/masah/MPLABXProjects/DigitalClock.X/Serial.c
+[v _setupSerial setupSerial `(v  1 e 1 0 ]
+{
+"10
+[v setupSerial@dummy dummy `uc  1 a 1 39 ]
+"27
+} 0
+"302 /home/masah/MPLABXProjects/DigitalClock.X/DigitalClock.c
+[v _setupPorts setupPorts `(v  1 e 1 0 ]
+{
+"312
+} 0
+"80 /home/masah/MPLABXProjects/DigitalClock.X/Serial.c
+[v _send_string_no_lib send_string_no_lib `(v  1 e 1 0 ]
+{
+[v send_string_no_lib@p p `*.34uc  1 p 2 40 ]
+"85
+} 0
+"72
+[v _send_byte_no_lib send_byte_no_lib `(v  1 e 1 0 ]
+{
+[v send_byte_no_lib@c c `uc  1 a 1 wreg ]
+[v send_byte_no_lib@c c `uc  1 a 1 wreg ]
+[v send_byte_no_lib@c c `uc  1 a 1 39 ]
+"78
+} 0
+"66
+[v _read_byte_no_lib read_byte_no_lib `(uc  1 e 1 0 ]
+{
+"67
+[v read_byte_no_lib@c c `uc  1 a 1 39 ]
+"70
+} 0
+"63 /home/masah/MPLABXProjects/DigitalClock.X/Lcd.c
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"65
+[v lcd_init@i i `uc  1 a 1 49 ]
+"83
+} 0
+"398 /home/masah/MPLABXProjects/DigitalClock.X/DigitalClock.c
+[v _isDigit isDigit `(i  1 e 2 0 ]
+{
+[v isDigit@c c `uc  1 a 1 wreg ]
+[v isDigit@c c `uc  1 a 1 wreg ]
+[v isDigit@c c `uc  1 a 1 41 ]
+"403
+} 0
+"350
+[v _initialization initialization `(v  1 e 1 0 ]
+{
+"372
+} 0
+"324
+[v _reloadTimer0 reloadTimer0 `(v  1 e 1 0 ]
+{
+"330
+} 0
+"331
+[v _initTimers01 initTimers01 `(v  1 e 1 0 ]
+{
+"349
+} 0
+"124
+[v _enableInterrupts enableInterrupts `(v  1 e 1 0 ]
+{
+"127
+} 0
+"119
+[v _disableInterrupts disableInterrupts `(v  1 e 1 0 ]
+{
+"122
+} 0
+"386
+[v _DisplayNames DisplayNames `(v  1 e 1 0 ]
+{
+"390
+} 0
+"127 /home/masah/MPLABXProjects/DigitalClock.X/Lcd.c
+[v _lcd_puts lcd_puts `(v  1 e 1 0 ]
+{
+[v lcd_puts@s s `*.34uc  1 p 2 53 ]
+"132
+} 0
+"113
+[v _lcd_putc lcd_putc `(v  1 e 1 0 ]
+{
+[v lcd_putc@c c `uc  1 a 1 wreg ]
+[v lcd_putc@c c `uc  1 a 1 wreg ]
+[v lcd_putc@c c `uc  1 a 1 52 ]
+"125
+} 0
+"96
+[v _lcd_gotoxy lcd_gotoxy `(v  1 e 1 0 ]
+{
+[v lcd_gotoxy@x x `uc  1 a 1 wreg ]
+"97
+[v lcd_gotoxy@address address `uc  1 a 1 51 ]
+"96
+[v lcd_gotoxy@x x `uc  1 a 1 wreg ]
+[v lcd_gotoxy@y y `uc  1 p 1 49 ]
+[v lcd_gotoxy@x x `uc  1 a 1 50 ]
+"111
+} 0
+"46
+[v _lcd_send_byte lcd_send_byte `(v  1 e 1 0 ]
+{
+[v lcd_send_byte@cm_data cm_data `uc  1 a 1 wreg ]
+[v lcd_send_byte@cm_data cm_data `uc  1 a 1 wreg ]
+[v lcd_send_byte@n n `uc  1 p 1 47 ]
+"50
+[v lcd_send_byte@cm_data cm_data `uc  1 a 1 48 ]
+"61
+} 0
+"36
+[v _lcd_send_nibble lcd_send_nibble `(v  1 e 1 0 ]
+{
+[v lcd_send_nibble@n n `uc  1 a 1 wreg ]
+[v lcd_send_nibble@n n `uc  1 a 1 wreg ]
+"38
+[v lcd_send_nibble@n n `uc  1 a 1 46 ]
+"44
+} 0
+"27
+[v _delay_cycles delay_cycles `(v  1 e 1 0 ]
+{
+[v delay_cycles@n n `uc  1 a 1 wreg ]
+"28
+[v delay_cycles@x x `i  1 a 2 43 ]
+"27
+[v delay_cycles@n n `uc  1 a 1 wreg ]
+"29
+[v delay_cycles@n n `uc  1 a 1 42 ]
+"33
+} 0
+"19
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+{
+"20
+[v delay_ms@x x `i  1 a 2 41 ]
+"19
+[v delay_ms@n n `ui  1 p 2 39 ]
+"25
+} 0
+"436 /home/masah/MPLABXProjects/DigitalClock.X/DigitalClock.c
+[v _lowIsr lowIsr `IIL(v  1 e 1 0 ]
+{
+"439
+} 0
+"405
+[v _highIsr highIsr `IIH(v  1 e 1 0 ]
+{
+"434
+} 0
+"124
+[v i2_enableInterrupts enableInterrupts `(v  1 e 1 0 ]
+{
+"127
+} 0
+"119
+[v i2_disableInterrupts disableInterrupts `(v  1 e 1 0 ]
+{
+"122
+} 0
